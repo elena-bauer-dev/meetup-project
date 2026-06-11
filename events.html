@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/events.css" />
+  </head>
+  <body>
+
+     <header class="header">
+      <div class="header__container-desc">
+        <div class="header__left">
+          <a href="./index.html" class="logo">
+            <img src="./assets/logos/SVG.png" alt="Meetup" />
+          </a>
+
+          <form class="search-form">
+            <div class="search-form__field">
+              <img
+                class="search-form__icon"
+                src="./assets/icons/features/search_gray.svg"
+                alt=""
+              />
+              <input type="text" placeholder="Search events" />
+            </div>
+
+            <div class="search-form__location">
+              <input type="text" placeholder="Mountain View, CA" />
+            </div>
+
+            <button class="search-form__button" type="submit">
+              <img src="./assets/icons/features/Vector.svg" alt="Search" />
+            </button>
+          </form>
+        </div>
+
+        <div class="header__right">
+          <a href="#" class="header__language">
+            <img src="./assets/icons/ui/globus.svg" alt="" />
+            <span>English</span>
+          </a>
+
+          <a href="/login" class="login">Log in</a>
+          <a href="">
+            <button class="sign" type="submit">Sign up</button>
+          </a>
+        </div>
+      </div>
+       <div class="header__container-mob">
+        <div class="header__left">
+          <a href="./index.html" class="logo">
+            <img src="./assets/logos/SVG.png" alt="Meetup"/>
+            </a>
+          <div class="header__links">
+          <a href="#" class="header__language">
+            <img src="./assets/icons/ui/globus.svg" alt="" />
+            <span>English</span>
+          </a>
+
+          <a href="#" class="login">Log in</a>
+          
+            <button class="sign" type="submit">Sign up</button>
+          </a>
+          </div>
+        </div>
+        <div class="header__right">
+          <form class="search-form">
+            <div class="search-form__field">
+              <img
+                class="search-form__icon"
+                src="./assets/icons/features/search_gray.svg"
+                alt=""
+              />
+              <input type="text" placeholder="Search events" />
+            </div>
+
+            <div class="search-form__location">
+              <input type="text" placeholder="Mountain View, CA" />
+            </div>
+
+            <button class="search-form__button" type="submit">
+              <img src="./assets/icons/features/Vector.svg" alt="Search" />
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+<section class="events-page">
+  <div class="container__events-page">
+
+    <div class="event-page__layout">
+
+      <div class="events-page__content-left">
+
+        <h2 class="titel events-page__titel">
+          Events near New York, NY
+        </h2>
+
+        <h3 class="events-pages-subtitle">Events</h3>
+
+        <div class="filter-events">
+          <select class="typeFilter">
+            <option value="all">Any type</option>
+            <option value="offline">Offline</option>
+            <option value="online">Online</option>
+          </select>
+
+          <select class="distanceFilter">
+            <option value="all">Any distance</option>
+            <option value="5">5 km</option>
+            <option value="15">15 km</option>
+            <option value="25">25 km</option>
+            <option value="50">50 km</option>
+          </select>
+
+          <select class="categoryFilter">
+            <option value="all">Any category</option>
+            <option value="Technology">Technology</option>
+            <option value="Business">Business</option>
+            <option value="Hobbies and Passions">Hobbies and Passions</option>
+            <option value="Social Activities">Social Activities</option>
+          </select>
+
+          <select class="dateFilter">
+            <option value="all">Any date</option>
+            <option value="Today">Today</option>
+            <option value="Tomorrow">Tomorrow</option>
+            <option value="This week">This week</option>
+            <option value="This weekend">This weekend</option>
+             <option value="Next week">Next week</option>
+          </select>
+        </div>
+
+
+        <!-- filtering for the mobile version -->
+          <div class="filter-events__mobile">
+          <select class="typeFilter-mobile">
+            <option value="all">Any type</option>
+            <option value="offline">Offline</option>
+            <option value="online">Online</option>
+          </select>
+
+          <select class="distanceFilter-mobile">
+            <option value="all">Any distance</option>
+            <option value="5">5 km</option>
+            <option value="15">15 km</option>
+            <option value="25">25 km</option>
+            <option value="50">50 km</option>
+          </select>
+
+          <select class="categoryFilter-mobile">
+            <option value="all">Any category</option>
+            <option value="Technology">Technology</option>
+            <option value="Business">Business</option>
+            <option value="Hobbies and Passions">Hobbies and Passions</option>
+            <option value="Social Activities">Social Activities</option>
+          </select>
+
+          <select class="dateFilter-mobile">
+            <option value="all">Any date</option>
+            <option value="Today">Today</option>
+            <option value="Tomorrow">Tomorrow</option>
+            <option value="This week">This week</option>
+            <option value="This weekend">This weekend</option>
+             <option value="Next week">Next week</option>
+          </select>
+        </div>
+
+        <section class="events">
+          <div class="events__list"></div>
+        </section>
+
+      </div>
+
+      <div class="events-page__content-right">
+        
+        <span class="events-page__laben">
+          Find events near
+        </span>
+        
+        <h3 class="events-page__location">
+          New York, NY
+        </h3>
+        
+        <div class="map">
+          
+          <img src="" alt="" class="events-near__icon">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20429.08057670783!2d8.6039438!3d50.20535185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sde!2sde!4v1780585894443!5m2!1sde!2sde"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+          </iframe> 
+      
+           <button class="btn__map">
+            Browse in map <img class="btn-expand__icon" src="./assets/icons/second-page/expandMapIcon.svg" alt="">
+          </button> 
+      
+           <a class="map__close" href="#">
+            <img src="./assets/icons/second-page/Vector.svg" alt="">
+          </a>
+      
+        </div>
+      
+      </div>
+      
+      </div>
+      
+      </div>
+    </div>
+
+  </div>
+    
+
+    <script src="./js/index.js"></script>
+  
+ <footer class="footer">
+      <div class="footer__container">
+  <div class="footer__top">
+        <p class="footer__cta">Create your own Meetup group.</p>
+        <button class="footer__btn">Get Started</button>
+      </div>
+      <!-- линия -->
+       <div class="footer__divider"></div>
+       <div class="footer__nav">
+        <div class="footer__column">
+          <h4 class="footer__title">Your Account</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="" class="footer__link">Sign up</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Log in</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Help</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Become an Affiliate</a>
+            </li>
+          </ul>
+        </div>
+
+          <div class="footer__column">
+          <h4 class="footer__title">Discover</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="" class="footer__link">Groups</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Calendar</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Topics</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Cities</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Online Events</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Local Guides</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Make Friends</a>
+            </li>
+          </ul>
+        </div>
+
+          <div class="footer__column">
+          <h4 class="footer__title">Meetup</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="" class="footer__link">About</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Blog</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Meetup Pro</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Careers</a>
+            </li>
+             <li class="footer__item">
+              <a href="" class="footer__link">Apps</a>
+            </li>
+             <li class="footer__item">
+              <a href="" class="footer__link">Podcast</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__social">
+        <h4 class="footer__social-title">Follow us</h4>
+      </div>
+      <div class="footer__social-items">
+        <div class="footer__social-list">
+          <img src="./assets/icons/social/facebook.svg" alt="facebook" class="footer__facebook">
+          <img src="./assets/icons/social/twitter.svg" alt="twitter" class="footer__twitter">
+          <img src="./assets/icons/social/youtube.svg" alt="" class="footer__youtube">
+          <img src="./assets/icons/social/instagram.svg" alt="" class="footer__instagram">
+          <img src="./assets/icons/social/tiktok.svg" alt="" class="footer__tiktok">
+        </div>
+        <div class="footer__social-link">
+          <a id="google" href="#google">
+            <img src="./assets/store-badges/Google-play.svg" alt="">
+          </a>
+           <a id="apple" href="#apple">
+            <img src="./assets/store-badges/apple-store.svg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+       <span class="footer__copyright">© 2024 Meetup</span>
+       <a href="" class="footer__police-link">Terms of Service</a>
+       <a href="" class="footer__police-link">Privacy Policy</a>
+       <a href="" class="footer__police-link">Do Not Sell or Share My Personal Data</a>
+       <a href="" class="footer__police-link">Cookie Policy</a>
+       <a href="" class="footer__police-link">Help</a>
+      </div>
+    </div>
+   
+    </footer>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
+
