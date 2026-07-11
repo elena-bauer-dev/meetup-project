@@ -213,3 +213,36 @@ typeFilterMobile?.addEventListener('change', filterEvents);
 distanceFilterMobile?.addEventListener('change', filterEvents);
 categoryFilterMobile?.addEventListener('change', filterEvents);
 dateFilterMobile?.addEventListener('change', filterEvents);
+
+const map = L.map('map').setView([40.728306, -74.124947], 13);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 19,
+}).addTo(map);
+
+L.marker([40.782971, -74.151657]).addTo(map).bindPopup('Being an INFJ');
+L.marker([40.6600700346257, -74.17228447979159])
+  .addTo(map)
+  .bindPopup('New York AI Users');
+L.marker([40.66977255408097, -74.1448424857073])
+  .addTo(map)
+  .bindPopup('New Jersey Business Network');
+L.marker([40.693504740280694, -74.10292429434408])
+  .addTo(map)
+  .bindPopup('Dump writing group');
+L.marker([40.70459115967145, -74.10542417927353])
+  .addTo(map)
+  .bindPopup('Over 40s, 50s, 60s Singles Chat, Meet & Dating Community');
+L.marker([40.71371787281672, -74.12607444803989])
+  .addTo(map)
+  .bindPopup('Manhattan Bible Study Meetup Group');
+
+// map.locate({ setView: true, maxZoom: 16 });
+
+// map.on('locationfound', function (e) {
+//   L.marker(e.latlng).addTo(map).bindPopup('Ты здесь');
+// });
+
+// map.on('locationerror', function (e) {
+//   alert('Не удалось определить местоположение: ' + e.message);
+// });

@@ -5,6 +5,7 @@
   font-family: 'Roboto', sans-serif;
   line-height: 24px;
 }
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -12,7 +13,26 @@ body {
 .container {
   max-width: 1192px;
   margin: 0 auto;
-  padding: 0 24px;
+  /* padding: 0 24px; */
+}
+
+@media (max-width: 1192px) {
+  .container {
+    padding: 0 24px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    margin: 0 auto;
+    /* padding: 0 40px; */
+  }
+}
+
+@media (max-width: 393px) {
+  .container {
+    margin: 0 auto;
+    /* padding: 0 12px; */
+  }
 }
 /* @media (max-width: 393px) {
   .container {
