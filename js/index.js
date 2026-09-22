@@ -120,7 +120,6 @@ function renderEventCard(event) {
   `;
 }
 
-// первоначальная отрисовка
 document.querySelector('.events__list').innerHTML = eventsStore
   .map(renderEventCard)
   .join('');
