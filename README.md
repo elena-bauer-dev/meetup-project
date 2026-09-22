@@ -11,6 +11,7 @@ Responsive web application inspired by the Meetup platform.
   - Category
   - Date
 - Google Maps integration
+- Dynamic event rendering with JavaScript
 - Semantic HTML5
 - CSS Flexbox & Grid
 - Vanilla JavaScript
@@ -26,6 +27,30 @@ Responsive web application inspired by the Meetup platform.
 - Home page
 - Events page
 
+## Project Structure
+
+```text
+meetup-project/
+├── assets/
+├── css/
+│   ├── events.css
+│   ├── index.css
+│   └── style.css
+├── js/
+│   └── index.js
+├── events.html
+├── index.html
+└── README.md
+```
+
+## Getting Started
+
+No installation or dependencies are required.
+
+Simply open index.html in your browser or use a local development server such as VS Code Live Server.
+
 ## Author
 
-Elena Bauer
+Created and developed by Elena Bauer.
+
+Frontend Developer | React · JavaScript
