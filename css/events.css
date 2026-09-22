@@ -45,20 +45,11 @@
   @media (max-width: 768px) {
     width: 170px;
   }
-  @media (max-width: 768px) {
-    /* width: 150px; */
-  }
 }
 
 .search-form__location {
   width: 250px;
   border-left: none;
-  @media (max-width: 768px) {
-    width: 200px;
-  }
-  @media (max-width: 768px) {
-    display: none;
-  }
   @media (max-width: 768px) {
     display: none;
   }
@@ -277,7 +268,7 @@
 .event-page-left {
   flex: 1;
 }
-.events-page__titel {
+.events-page__title {
   font-size: 28px;
   font-weight: 600;
 }
@@ -598,12 +589,7 @@ select {
     padding-left: 0;
   }
 }
-/* @media (max-width: 393px) {
-  .footer__cta {
-    max-width: 180px;
-    text-align: left;
-  }
-} */
+
 .footer__btn {
   width: 119px;
   height: 44px;
@@ -640,7 +626,6 @@ select {
   justify-content: flex-start;
   gap: clamp(40px, 8vw, 180px);
   width: 100%;
-  /* padding-left: clamp(20px, 5vw, 140px); */
   max-width: 1120px;
 }
 .footer__column {
@@ -653,10 +638,7 @@ select {
     padding-left: 0;
   }
 }
-@media (max-width: 768px) {
-  .footer__column {
-  }
-}
+
 @media (max-width: 768px) {
   .footer__nav {
     gap: 80px;
@@ -700,7 +682,6 @@ select {
   max-width: 1120px;
   width: 100%;
   padding-left: 25px;
-  /* padding-left: 0; */
   @media (max-width: 768px) {
     padding-left: 20px;
   }
@@ -721,7 +702,6 @@ select {
   color: #f6f7f8;
   margin-bottom: 15px;
   margin-top: 24px;
-  /* padding-left: 20px; */
 }
 @media (max-width: 768px) {
   .footer__social-title {
@@ -759,7 +739,6 @@ select {
   margin: 0 auto 50px;
   gap: 32px;
   padding-left: 15px;
-  /* padding-left: 120px; */
   @media (max-width: 768px) {
     padding-left: 20px;
   }
@@ -796,9 +775,6 @@ select {
 .footer__social-list img {
   width: 25px;
   height: 25px;
-  /* @media (max-width: 1180px) {
-    padding-left: 0;
-  } */
 }
 .footer__social-list img:hover {
   animation: pulse 0.8s ease;
@@ -839,7 +815,6 @@ select {
   align-items: center;
   gap: 24px;
   padding-left: 20px;
-  /* padding-left: 130px; */
 }
 @media (max-width: 768px) {
   .footer__bottom {
@@ -970,21 +945,10 @@ select {
     height: auto;
   }
 
-  /* .events-near__list {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  } */
-
   .online-events__list {
     flex-direction: column;
     gap: 24px;
   }
-
-  /* .categories__list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-  } */
 
   .container_meetup {
     flex-direction: column;
